@@ -15,10 +15,14 @@ $(window).scroll(function() {
   });
 });
 
-$(".home-text").delay(2000).animate({"opacity": "1"}, 1000);
+$(".home-text").delay(200).animate({"opacity": "1"}, 1000);
 
-$(".arrow").delay(3000).animate({"opacity": "1"}, 1000);
+$(".arrow").delay(300).animate({"opacity": "1"}, 1000);
 
+var alertList = document.querySelectorAll('.alert')
+alertList.forEach(function (alert) {
+  new bootstrap.Alert(alert)
+})
 
 
 

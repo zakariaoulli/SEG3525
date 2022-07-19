@@ -18,10 +18,12 @@
         <title>Nudge INC</title>
         <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>      
     </head>
+  
+     
     
+  </div>
     <body id="body">
         <div class="container">
-
             <header class="d-flex justify-content-center py-1">
               <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
@@ -31,15 +33,48 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQS</a></li>
               </ul>
             </header>
-          </div>
-        <!-- HOME -->
 
-        <div class = "home" id="home">
-            <div class = "home-text">
-                <h1>WELCOME TO A VOS RAQUETTES!</h1>
-                <h2> A vos raquettes offers tennis lessons to its members, but also access to tennis courts that it owns.</h2>
+          </div>
+          <div class = "home" id="home">
+            <ul 
+            class="row height: 100px">
+            <div style="height: 70px"></div>
+             <div class="col-3 mh-10" style="height: 600px;"> 
+                 </div>
+                 <div class="col-3 ">
+                     <div class="card bg-warning float-center " style="width: 50rem;">
+                         <div class="card-body">
+                             <h5 class="card-title">Book a tenis court!</h5>
+                             <div class="card-text">
+                                 <h6>First & Last Name:</h6>
+                                 <input type="text" id="Titre" name="Titre"><br><br>
+                                 <h6>Phone number:</h6>
+                                 <input type="text" id="Desc" name="Desc"><br><br>
+                                 <h6>Email Address</Address>:</h6>
+                                 <input type="text" id="prix" name="prix"><br><br>
+                                 
+                                 <h6>Date de votre activité:</h6>
+                                 <input type="date" id="date-activite" name="date-activite" min="2022-06-09" max="2050-06-09">
+                      
+                             </div>
+                            
+
+
+                             <button class="btn btn-primary btn-lg active">Publier votre message!</button> 
+                             <script src="jquery.-3.2.1.slim.min.js"></script>
+                             <script>
+                              $(function(){
+                                $("button").on("click", function(){
+                                  var test = $(this).text();
+                                  alert(test);
+                                });
+                              });
+                             </script>
+               </div>
+             </ul> 
             </div>
-        </div>
+            
+        
        
 
     <!-- FOOTER -->
@@ -48,7 +83,7 @@
     <footer class="py-2 my-1">
       <ul class="nav justify-content-center border-bottom pb-2 mb-2">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="Book.html" class="nav-link px-2 text-muted">Book</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Book</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Forum discussion</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our Memberships</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQS</a></li>
@@ -58,20 +93,19 @@
   </div>
   
     
-      
-    <script src="main.js" language="JavaScript" type="text/javascript">
-        </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js">    
-    </script>
-    <script src="aos.js"></script>
-    <script type="text/javascript">
-        AOS.init(
-            {
-                offset: 200,
-                duration: 1250,
-            }
-        );
-    </script> 
-    </body>
+  <script src="main.js" language="JavaScript" type="text/javascript">
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.js">    
+</script>
+<script src="aos.js"></script>
+<script type="text/javascript">
+  AOS.init(
+      {
+          offset: 200,
+          duration: 1250,
+      }
+  );
+</script> 
+</body>
 
 </html>
